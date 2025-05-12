@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eddc3ec1f6.js" crossorigin="anonymous"></script>
+    <title>LegalAssist Chatbot</title>
+</head>
+
+<body>
+    <header class="top">
+        <section>
+            <div id="loginModal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close none" id="closeLogin">&times;</span>
+                    <h2 class="none help-me">Log In</h2>
+                    <input class='pop-up' type="text" id="login-username" placeholder="Username">
+                    <input class='pop-up' type="password" id="login-password" placeholder="Password">
+                    <button class='pop-up' id="login-btn">Login</button>
+                </div>
+            </div>
+            <div id="signupModal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close none" id="closeSignup">&times;</span>
+                    <h2 class="none help-me">Sign Up</h2>
+                    <input class='pop-up' type="text" id="signup-username" placeholder="Username">
+                    <input class='pop-up' type="password" id="signup-password" placeholder="Password">
+                    <button class='pop-up' id="signup-btn">Sign Up</button>
+                </div>
+            </div>
+        </section>
+        <div>
+            <div class="top-t">
+                <div class="top-left">
+                    <a href="./index.html" class="none">
+                        <div class="none pointer"><span class="bold1 none">Legal</span>Assist</div>
+                    </a>
+                </div>
+            </div>
+            <div class="red"></div>
+        </div>
+        <div class="top-right">
+            <div class="top-but">
+                <div class="top-box">
+                    <a href="./index.html" class="none">
+                        <div class="top-text none" title="Comming soon">Cyber</div>
+                    </a>
+                </div>
+                <div class="top-box1 none">
+                    <div class="top-text none" title="Comming soon">Marriage</div>
+                </div>
+                <div class="top-box1 none">
+                    <div class="top-text none" title="Comming soon">Business</div>
+                </div>
+            </div>
+            <div class="none">
+                <div class="none right">
+                    <div class="none">
+                        <button class="plus1">Log In</button>
+                    </div>
+                    <div class="none">
+                        <div></div>
+                        <button class="plus1" id="plus2">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="con">
+        <section class="side-left">
+            <div class="none">
+                <a href="./index.html" class="none">
+                    <div class="new"><i class="fa-solid fa-plus none add"></i>New Chat</div>
+                </a>
+            </div>
+            <div class="none">
+                <button class="plus none"> <i class="fa-regular fa-chess-king king"></i> Upgrade to Plus</button>
+            </div>
+        </section>
+        <section class="main">
+            <div class="focus none">
+                <div class="gal none">
+                    <div class="back1 bold none">Legal</div>
+                    <div class="back2 none">Assist</div>
+                    <div id="message" class="m-box"></div>
+                </div>
+                <div class="container">
+                    <div class="card-box">
+                        <div class="card">
+                            <div class="bold1"></div>
+                            <div></div>
+                        </div>
+                        <div class="card">
+                            <div class="bold1"></div>
+                            <div></div>
+                        </div>
+                        <div class="card">
+                            <div class="bold1"></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="b none">
+                        <div class="t">
+                            <input class="input" type="text" id="input-field">
+                            <div class="send" id="send-button"><i class="fa-solid fa-paper-plane none plane"></i></div>
+                        </div>
+                        <div class="note none">This chatbot does not provide professional advice. For specific legal counsel, please consult a qualified attorney.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="link">
+                <div class="none l" id="li">Generated Links of <span class="bold none" id="li">Websites</span> and <span class="bold none" id="li">Documents</span> will appear here</div>
+            </div>
+        </section>
+    </section>
+    <script src="./Script/index.js"></script>
+</body>
+
+</html>
